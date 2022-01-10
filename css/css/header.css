@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+@font-face {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    src: url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff")
+            format("woff"),
+        url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf")
+            format("truetype");
+    /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+/*reset style*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: darkgrey;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+/*--------------------*/
+
+.container {
+    width: 100%;
+    max-width: 1782px;
+    max-height: 67.71px;
+}
+
+header {
+    gap: 20px;
+    list-style: none;
+    background: url("//img/header_pic.png");
+}
+
+.header_logo {
+    display: block;
+    /*margin-top: 11.5px;*/
+    margin-left: 79.5px;
+    margin-right: 134px;
+}
+
+.menu {
+    display: flex;
+    color: #ffffff;
+    margin-top: 36.68px;
+    list-style: none;
+}
+
+a {
+    all: inherit;
+}
+
+.catalog {
+    font-family: Comic Neue;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: 17px;
+}
+
+.header_arrow {
+    margin-top: 10px;
+    margin-right: 45.75px;
+    margin-left: 10.75px;
+    margin-top: 25px;
+    display: inline-flex;
+}
+
+.dropdown_list {
+    display: block;
+    position: relative;
+}
+
+/*styles for dropdown menu*/
+.list_sub_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 5px;
+    width: 1400px;
+    height: 366px;
+    background-color: #f5eff1;
+    /*background: url("../img/rabbit_list.jpg") bottom right no-repeat;*/
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19.09px;
+    color: #768094;
+    font-weight: 700;
+    font-family: SF Pro Display;
+    color: #ffffff;
+}
+
+.list_sub_list li {
+    width: 161px;
+    text-align: left;
+    background-color: #f5eff1;
+    flex-grow: 1;
+    margin-left: 44px;
+    list-style: none;
+}
+
+.open_sub {
+    margin-top: 20px;
+    color: #768094;
+}
+
+.subcategory_list {
+    /*position: absolute;*/
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #768094;
+    margin-top: 13px;
+    background-color: #f5eff1;
+    text-align: left;
+}
+
+/*-------*/
+
+.nav_line {
+    font-family: SF Pro Display;
+    font-size: 22px;
+    line-height: 16.71px;
+    font-style: normal;
+    color: #ffffff;
+    margin: 20px 50px auto 40px;
+}
+
+/*burger-menu*/
+
+.button_burger {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu_btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu_btn div {
+    width: 22.17px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    margin: 2.5px auto;
+}
+
+.menu_burger {
+    list-style: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .button_burger {
+        display: block;
+        position: relative;
+    }
+}
